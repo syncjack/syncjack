@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  rusted-tested:
+    build: .
+    image: rusted-tested
+    working_dir: /app
+    volumes:
+      - .:/app
+    privileged: true
+
